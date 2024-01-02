@@ -1,0 +1,227 @@
+.admissioncontainer {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.smalhead {
+  font-size: 1rem;
+  letter-spacing: 1.6px;
+}
+
+.heading {
+  font-size: 4rem;
+}
+
+.headbox {
+  margin-bottom: 50px;
+}
+
+.containerbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.birbox {
+  width: 800px;
+  border-radius: 20px;
+  background-color: var(--blue-color);
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);
+}
+
+.birfirst {
+  padding: 20px;
+  display: flex;
+}
+
+.birimgbox {
+  width: 150px;
+}
+
+.birimg {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.birtxt {
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+}
+
+.bircourse {
+  font-size: 1.5rem;
+  padding: 0;
+  color: white;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  position: relative;
+}
+
+.bircourse::after {
+  content: "";
+  bottom: 0;
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--orange);
+  display: block;
+}
+
+.bripara {
+  font-size: 1.1rem;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.coursbtn {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--orange);
+}
+
+.satyamhead {
+  display: flex;
+  gap: 20px;
+}
+
+.sathead {
+  font-size: 2rem;
+  color: white;
+}
+
+.satpara {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.satyamcontainer {
+  width: 700px;
+  background-color: var(--blue-light-v2);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);
+}
+
+.satyamimgbox {
+  width: 150px;
+}
+
+.satyamimg {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.satyamcourse {
+  font-size: 1.5rem;
+  padding: 0;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  position: relative;
+}
+
+.satyamcourse::after {
+  content: "";
+  bottom: 0;
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--orange);
+  display: block;
+}
+
+.satyampara {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.satyamsbtn {
+  border-radius: 30px;
+  border: none;
+  background-color: var(--orange);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.satyambox {
+  padding: 20px;
+}
+
+.satyamcontainerTwo {
+  background-color: var(--blue-light-v4);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);
+}
+
+.satyaitimbox {
+  padding: 20px;
+}
+
+.satyitiamhead {
+  display: flex;
+  gap: 20px;
+}
+
+.satitihead {
+  font-size: 2rem;
+  color: var(--txtBlack);
+}
+
+.satitipara {
+  font-size: 1.1rem;
+  color: var(--txtBlack);
+}
+
+.satyamiticourse {
+  font-size: 1.5rem;
+  padding: 0;
+  color: var(--txtBlack);
+  letter-spacing: 1px;
+  font-weight: 600;
+  position: relative;
+}
+
+.satyamiticourse::after {
+  content: "";
+  bottom: 0;
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--orange);
+  display: block;
+}
+
+.satyamitiparatwo {
+  color: var(--txtBlack);
+  font-size: 1.1rem;
+}
+
+.tide {
+  position: absolute;
+  top: 50px;
+  left: 600px;
+  width: 600px;
+}
+
+.dotgroup {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-65%);
+  right: -80px;
+  z-index: -1;
+}

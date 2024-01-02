@@ -1,0 +1,100 @@
+.faqContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.faqHeadBoxHeading {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.faqHeadBoxPara {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--txtBlack);
+}
+
+.faqHeadBox {
+  margin-bottom: 40px;
+}
+
+.faqQuestionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqQuestionTwoBox {
+  width: fit-content;
+  width: min(50%, 1000px);
+}
+
+.faqQuestionTwo {
+  position: relative;
+  background-color: var(--backColor);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  height: 70px;
+  overflow: hidden;
+  transition: height 2s cubic-bezier(0, 1, 0, 1);
+}
+
+.faqTwoShow {
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  height: fit-content;
+  overflow: hidden;
+  transition: height 2s cubic-bezier(1, 0, 1, 0);
+}
+
+.faqQuestion {
+  padding: 10px;
+}
+
+.faqQuestion > ul > li {
+  font-size: 1.5rem;
+}
+
+.faqQuestion > p {
+  font-size: 1.2rem;
+  padding-left: 20px;
+  line-height: 1.9;
+  letter-spacing: 1.1px;
+}
+
+.faqEntity {
+  position: absolute;
+  font-size: 2rem;
+  right: 30px;
+  top: -15px;
+  transform: rotate(-90deg);
+}
+
+.faqEntityRotate {
+  position: absolute;
+  font-size: 2rem;
+  right: 30px;
+  top: -15px;
+  transform: rotate(90deg);
+}
+
+.faqQuestionOne > p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.faqBtnBox {
+  display: flex;
+  justify-content: center;
+}
+
+.faqBtnBox > button {
+  background-color: var(--orange);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}

@@ -1,0 +1,89 @@
+.whyUsContainer {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.whyUsHeadBox {
+  margin-bottom: 50px;
+}
+
+.whyUsHeadBoxPara {
+  font-size: 1.2rem;
+  color: var(--txtBlack);
+  text-align: center;
+}
+
+.WhyUsHeadBoxHeading {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.whyUsDotGroup {
+  position: absolute;
+  right: 0;
+}
+
+.whyUsExplContainer {
+  width: 100%;
+  background-color: var(--blue-light-v3);
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.whyUsExplBox {
+  padding: 50px;
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.whyUsCard {
+  width: 500px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.whyUsImgBox {
+  width: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.whyUsImg {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.whyUsTxtBoxHeading {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: var(--btn-color);
+}
+
+.whyUsTxtBoxPara {
+  font-size: 0.8rem;
+  color: var(--txtBlack);
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.whyUsBtnBox {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.whyUsBtn {
+  padding: 10px 20px;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 20px;
+}

@@ -1,0 +1,38 @@
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  width: 88%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid black;
+  z-index: 1;
+}
+
+.headerbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav > ul > li {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.querybtn {
+  padding: 10px 20px;
+  background-color: var(--btn-color);
+  border-radius: 38px;
+  color: white;
+  letter-spacing: 0.9px;
+  border: none;
+}
