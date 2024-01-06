@@ -36,3 +36,14 @@
   letter-spacing: 0.9px;
   border: none;
 }
+
+.logobox {
+  width: 70px;
+}
+
+.logoImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}

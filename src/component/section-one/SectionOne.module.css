@@ -2,6 +2,7 @@
   padding-top: 200px;
   z-index: 4;
   display: flex;
+  justify-content: space-between;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 10%;
@@ -19,10 +20,10 @@
   border-bottom-right-radius: 130px;
   transform: rotate(30deg);
   transform-origin: left top;
-  top: -10%;
+  top: -20%;
   left: 48%;
   z-index: -1;
-  width: 200px;
+  width: 12%;
   background-color: var(--rotatebox);
   animation-name: lineanione;
   animation-duration: 4s;
@@ -34,7 +35,7 @@
     height: 0;
   }
   to {
-    height: 900px;
+    height: 110%;
   }
 }
 
@@ -45,10 +46,10 @@
   border-bottom-right-radius: 130px;
   transform: rotate(30deg);
   transform-origin: left top;
-  top: -10%;
-  left: 63%;
+  top: -20%;
+  left: 65%;
   z-index: -1;
-  width: 200px;
+  width: 12%;
   background-color: var(--rotatebox);
   animation-name: lineanitwo;
   animation-duration: 4s;
@@ -60,7 +61,7 @@
     height: 0;
   }
   to {
-    height: 850px;
+    height: 110%;
   }
 }
 
@@ -128,7 +129,7 @@
 }
 
 .sectionTwoLastLayer {
-  width: 600px;
+  width: 640px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -152,7 +153,6 @@
 }
 
 .twoPicBox {
-  width: 300px;
   height: 300px;
   border-radius: 30px;
   background-color: var(--orange);

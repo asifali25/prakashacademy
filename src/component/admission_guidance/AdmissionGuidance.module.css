@@ -22,10 +22,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
 }
 
 .birbox {
-  width: 800px;
+  width: min(50%, 800px);
   border-radius: 20px;
   background-color: var(--blue-color);
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);
@@ -34,14 +35,15 @@
 .birfirst {
   padding: 20px;
   display: flex;
+  gap: 20px;
 }
 
 .birimgbox {
-  width: 150px;
+  width: min(20%, 150px);
 }
 
 .birimg {
-  width: auto;
+  width: 100%;
   height: auto;
   object-fit: contain;
   object-position: center;
@@ -91,6 +93,10 @@
   background-color: var(--orange);
 }
 
+.secondcontainer {
+  width: min(50%, 700px);
+}
+
 .satyamhead {
   display: flex;
   gap: 20px;
@@ -108,7 +114,8 @@
 }
 
 .satyamcontainer {
-  width: 700px;
+  width: 100%;
+  /* width: min(100%, 500px); */
   background-color: var(--blue-light-v2);
   border-radius: 20px;
   margin-bottom: 50px;
@@ -116,11 +123,11 @@
 }
 
 .satyamimgbox {
-  width: 150px;
+  width: min(20%, 150px);
 }
 
 .satyamimg {
-  width: auto;
+  width: 100%;
   height: auto;
   object-fit: contain;
   object-position: center;
@@ -163,6 +170,7 @@
 }
 
 .satyamcontainerTwo {
+  width: 100%;
   background-color: var(--blue-light-v4);
   border-radius: 20px;
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);

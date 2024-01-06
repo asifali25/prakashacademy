@@ -1,0 +1,87 @@
+.footerContainer {
+  background-color: var(--blue-color-v1);
+}
+
+.footerContainerInside {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLogo {
+  width: 100px;
+  margin-bottom: 80px;
+}
+
+.footerLogoImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.socialLogo {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.footerFollowtxt {
+  font-size: 1rem;
+  color: white;
+}
+
+.logo {
+  width: auto;
+  height: 25px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.footerLinkPagesContainer {
+  display: flex;
+  gap: 50px;
+}
+
+.footerContact {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerContactBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footerContactIcon {
+  width: auto;
+  height: 30px;
+}
+
+.footerContactTxt {
+  font-size: 1rem;
+}
+
+.footerHome {
+  display: flex;
+  gap: 70px;
+}
+
+.footerHome > p {
+  font-size: 1rem;
+  letter-spacing: 1.4px;
+  color: white;
+}
+
+.footerContactTxt {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}

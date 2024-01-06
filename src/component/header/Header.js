@@ -1,5 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./Header.module.css";
+import Logo from "../../../public/Logo.svg";
 
 function Header() {
   return (
@@ -7,7 +9,13 @@ function Header() {
       <header className={styles.header}>
         <div className={styles.headerbox}>
           <div className={styles.logobox}>
-            <h1>Logo</h1>
+            <Image
+              className={styles.logoImg}
+              src={Logo}
+              width={100}
+              height={100}
+              alt="Prakash_Academy_Logo"
+            ></Image>
           </div>
           <nav className={styles.nav}>
             <ul>

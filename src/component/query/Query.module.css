@@ -41,7 +41,7 @@
 }
 
 .queryFormImgBox {
-  width: 200px;
+  width: min(20%, 200px);
   padding-left: 30px;
   transform: rotate(10deg);
 }

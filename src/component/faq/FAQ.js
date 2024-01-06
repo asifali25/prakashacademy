@@ -18,7 +18,10 @@ function FAQ() {
       <div className={styles.faqContainer}>
         <div className={styles.faqHeadBox}>
           <h1 className={styles.faqHeadBoxHeading}>
-            Frequently Asked Question
+            <span style={{ color: "#9cc4fc" }}>Frequently Asked</span>{" "}
+            <span style={{ color: "#005ee1", fontWeight: "bold" }}>
+              Question
+            </span>
           </h1>
           <p className={styles.faqHeadBoxPara}>
             We are here to explain every thing you might want to know
@@ -85,7 +88,7 @@ const data = [
   },
   {
     title: "How to get Admission in ITI?",
-    answer: `After complete 12th you can give an entrance exam to get admission in any ITI college  `,
+    answer: `After complete 12th you can give an entrance exam to get admission in any ITI college. `,
   },
 ];
 
