@@ -1,9 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Logo from "../../../public/Logo.svg";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 
-function Header() {
+function Header({ setMob, mobNav }) {
+  function openClickHandler() {
+    setMob(true);
+  }
+
+  console.log(mobNav);
+
   return (
     <>
       <header className={styles.header}>
@@ -25,8 +35,13 @@ function Header() {
               <li>Contact Us</li>
             </ul>
           </nav>
-          <div>
+          <div className={styles.querybtnBox}>
             <button className={styles.querybtn}>Query Now</button>
+          </div>
+          <div className={styles.mobHamberger} onClick={openClickHandler}>
+            <RxHamburgerMenu
+              className={styles.mobHambergersize}
+            ></RxHamburgerMenu>
           </div>
         </div>
       </header>

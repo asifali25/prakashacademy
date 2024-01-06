@@ -1,3 +1,5 @@
+"use client";
+
 import SectionOne from "@/component/section-one/SectionOne";
 import Service from "@/component/serviceprovide/Service";
 import AdmissionGuidance from "@/component/admission_guidance/AdmissionGuidance";

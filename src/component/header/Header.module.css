@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .nav > ul {
@@ -46,4 +47,86 @@
   height: auto;
   object-fit: contain;
   object-position: center;
+}
+
+.mobHamberger {
+  display: none;
+}
+
+.mobHeaderBox {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .nav,
+  .querybtnBox {
+    display: none;
+  }
+
+  .mobHambergersize {
+    font-size: 2rem;
+  }
+
+  .headerbox {
+    overflow: hidden;
+  }
+
+  .mobHamberger {
+    display: block;
+  }
+
+  .mobHeaderBox {
+    display: block;
+    position: absolute;
+    width: min(50%, 250px);
+    right: -100%;
+    top: 20px;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    transition: right 2s ease;
+  }
+
+  .mobHeaderBoxShow {
+    display: block;
+    position: absolute;
+    width: min(50%, 250px);
+    right: 0px;
+    top: 20px;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    transition: right 2s ease;
+  }
+
+  .mobHeaderClose {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    color: white;
+  }
+
+  .mobClose {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+
+  .mobNavBtnBox {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mobNavBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--orange);
+  }
+
+  .mobNav {
+    margin: 20px;
+  }
+
+  .mobNav > p {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
 }

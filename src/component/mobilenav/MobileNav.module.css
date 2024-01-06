@@ -1,0 +1,84 @@
+@media screen and (min-width: 1301px) {
+  .mobHeaderBox {
+    display: none;
+    position: fixed;
+    width: min(50%, 250px);
+    right: -50%;
+    top: 20px;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    transition: right 1s ease;
+    z-index: 5;
+  }
+
+  .mobHeaderBoxShow {
+    display: none;
+    position: fixed;
+    width: min(50%, 250px);
+    right: 2%;
+    top: 20px;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    transition: right 1s ease;
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .mobHeaderBox {
+    display: block;
+    position: fixed;
+    width: min(50%, 250px);
+    right: -50%;
+    top: 20px;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    transition: right 1s ease;
+    z-index: 5;
+  }
+
+  .mobHeaderBoxShow {
+    display: block;
+    position: fixed;
+    width: min(50%, 250px);
+    right: 2%;
+    top: 20px;
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    transition: right 1s ease;
+    z-index: 5;
+  }
+
+  .mobHeaderClose {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    color: white;
+  }
+
+  .mobClose {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+
+  .mobNavBtnBox {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mobNavBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--orange);
+  }
+
+  .mobNav {
+    margin: 20px;
+  }
+
+  .mobNav > p {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+}
