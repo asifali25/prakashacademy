@@ -69,35 +69,41 @@ function Footer() {
           </div>
           <div className={styles.footerContact}>
             <div className={styles.footerContactBox}>
-              <Image
-                className={styles.footerContactIcon}
-                src={Phone}
-                width={100}
-                height={100}
-                alt="Phone-Icon"
-              ></Image>
+              <div className={styles.footerContactIconBox}>
+                <Image
+                  className={styles.footerContactIcon}
+                  src={Phone}
+                  width={100}
+                  height={100}
+                  alt="Phone-Icon"
+                ></Image>
+              </div>
               <p className={styles.footerContactTxt}>+91 8920085041</p>
             </div>
             <div className={styles.footerContactBox}>
-              <Image
-                className={styles.footerContactIcon}
-                src={mail}
-                width={100}
-                height={100}
-                alt="Phone-Icon"
-              ></Image>
+              <div className={styles.footerContactIconBox}>
+                <Image
+                  className={styles.footerContactIcon}
+                  src={mail}
+                  width={100}
+                  height={100}
+                  alt="Phone-Icon"
+                ></Image>
+              </div>
               <p className={styles.footerContactTxt}>
                 prakashinstitute1@gmail.com
               </p>
             </div>
             <div className={styles.footerContactBox}>
-              <Image
-                className={styles.footerContactIcon}
-                src={location}
-                width={100}
-                height={100}
-                alt="Phone-Icon"
-              ></Image>
+              <div className={styles.footerContactIconBox}>
+                <Image
+                  className={styles.footerContactIcon}
+                  src={location}
+                  width={100}
+                  height={100}
+                  alt="Phone-Icon"
+                ></Image>
+              </div>
               <p className={styles.footerContactTxt}>
                 C-12, Guru Ram Dass Nagar,<br></br> Laxmi Nagar, Delhi-110092
               </p>

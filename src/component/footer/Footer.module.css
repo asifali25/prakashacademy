@@ -1,4 +1,5 @@
 .footerContainer {
+  width: 100vw;
   background-color: var(--blue-color-v1);
 }
 
@@ -6,7 +7,9 @@
   width: 90%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   padding: 20px;
+  gap: 30px;
   justify-content: space-between;
   align-items: center;
 }
@@ -41,36 +44,36 @@
   object-position: center;
 }
 
-.footerLinkPagesContainer {
-  display: flex;
-  gap: 50px;
-}
-
 .footerContact {
+  width: min(100%, 500px);
   display: flex;
   gap: 5px;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .footerContactBox {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
+}
+
+.footerContactIconBox {
+  width: 30px;
 }
 
 .footerContactIcon {
-  width: auto;
-  height: 30px;
-}
-
-.footerContactTxt {
-  font-size: 1rem;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 .footerHome {
   display: flex;
-  gap: 70px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footerHome > p {
@@ -80,8 +83,30 @@
 }
 
 .footerContactTxt {
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
   color: white;
   line-height: 1.5;
   letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 950px) {
+  .footerContactBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footerContainerInside {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
 }

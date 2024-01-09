@@ -5,7 +5,7 @@
 }
 
 .faqHeadBoxHeading {
-  font-size: 4rem;
+  font-size: clamp(3rem, 4vw, 4rem);
   text-align: center;
   font-weight: 400;
 }
@@ -24,11 +24,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .faqQuestionTwoBox {
   width: fit-content;
-  width: min(50%, 1000px);
+  width: min(100%, 1000px);
 }
 
 .faqQuestionTwo {
@@ -82,6 +83,10 @@
   transform: rotate(90deg);
 }
 
+.faqQuestionOne {
+  width: min(100%, 500px);
+}
+
 .faqQuestionOne > p {
   font-size: 1.5rem;
   text-align: center;
@@ -98,4 +103,14 @@
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .faqQuestionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }

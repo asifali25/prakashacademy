@@ -10,14 +10,14 @@
 
 .coachingHeadPara {
   text-align: center;
-  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
   letter-spacing: 1.5;
   color: var(--txtBlack);
 }
 
 .coachingHeadHeading {
   text-align: center;
-  font-size: clamp(1rem, 4vw, 4rem);
+  font-size: clamp(3rem, 4vw, 4rem);
   font-weight: 300;
 }
 
@@ -31,7 +31,6 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 auto;
   gap: 20px;
 }
@@ -39,7 +38,7 @@
 .coachingBoxOne,
 .coachingBoxTwo,
 .coachingBoxThree {
-  width: min(30%, 500px);
+  width: min(100%, 500px);
   box-shadow: 1px 0px 14px 0px rgb(178, 176, 176, 0.22);
   border-radius: 19px;
 }
@@ -61,7 +60,7 @@
 .boxInsideOneHeading,
 .boxInsideTwoHeading,
 .boxInsideThreeHeading {
-  font-size: clamp(0.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 2rem);
   font-weight: 500;
   text-align: center;
   margin-bottom: 30px;
@@ -110,4 +109,21 @@
 
 .coachingdots {
   position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+  .coachingBoxContainer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .coachingdots {
+    display: none;
+  }
 }

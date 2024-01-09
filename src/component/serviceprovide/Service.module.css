@@ -10,6 +10,7 @@
   max-width: 100%;
   padding: 5px 25px 5px 25px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
@@ -21,8 +22,7 @@
 }
 
 .imgbox {
-  width: 100px;
-  height: 100px;
+  width: min(30%, 100px);
   border-radius: 15px;
   background-color: white;
   display: flex;
@@ -31,13 +31,36 @@
 }
 
 .img {
-  width: 60px;
-  height: 60px;
+  width: 60%;
+  display: block;
+  margin: 20px;
+  height: auto;
   object-fit: contain;
   object-position: center;
 }
 
 .coachingPara {
-  font-size: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   color: var(--blue-color);
+}
+
+@media screen and (max-width: 1123px) {
+  .services {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--blue-light-v3);
+    border-radius: 20px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .servicesBox {
+    max-width: 100%;
+    padding: 5px 25px 5px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }

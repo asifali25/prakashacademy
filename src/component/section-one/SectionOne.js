@@ -29,8 +29,10 @@ function SectionOne() {
               ></Image>
             </div>
             <h1 className={styles.sectionHeading}>
-              Coaching <span style={{ fontWeight: "bold" }}>Excellence</span>{" "}
-              Personalized <span style={{ fontWeight: "bold" }}>Guidance</span>
+              Coaching <br></br>{" "}
+              <span style={{ fontWeight: "bold" }}>Excellence</span> <br></br>
+              Personalized <br></br>{" "}
+              <span style={{ fontWeight: "bold" }}>Guidance</span>
             </h1>
             <p className={styles.sectionPara}>
               Decided the Value? If you want to continue keep your study

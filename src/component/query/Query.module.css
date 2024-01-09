@@ -10,7 +10,7 @@
 .queryHeaderBoxHeading {
   text-align: center;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: clamp(3rem, 4vw, 4rem);
 }
 
 .queryHeaderBoxPara {
@@ -19,21 +19,23 @@
 }
 
 .queryFormContainer {
-  width: 60%;
+  background-color: var(--blue-light-v4);
+  border-radius: 20px;
+  width: min(90%, 1000px);
   margin: 0 auto;
+  padding: 20px;
 }
 
 .queryFormBox {
-  background-color: var(--blue-light-v4);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 10px 40px 10px;
-  border-radius: 20px;
+  gap: 20px;
 }
 
 .queryFormDiv {
-  width: min(70%, 1000px);
+  width: min(100%, 700px);
 }
 
 .queryForm {
@@ -78,4 +80,14 @@
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
+}
+
+@media screen and (max-width: 1041px) {
+  .queryFormBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }

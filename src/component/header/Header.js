@@ -12,8 +12,6 @@ function Header({ setMob, mobNav }) {
     setMob(true);
   }
 
-  console.log(mobNav);
-
   return (
     <>
       <header className={styles.header}>
