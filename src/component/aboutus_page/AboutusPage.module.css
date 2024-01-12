@@ -1,0 +1,24 @@
+.aboutUsContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUsInsideContainer {
+  display: inline-block;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.aboutPara {
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  line-height: 1.8;
+}
+
+.aboutusHeading {
+  margin: 40px 50px;
+  text-align: center;
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 400;
+}

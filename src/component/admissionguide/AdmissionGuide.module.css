@@ -1,0 +1,22 @@
+.admissionMainContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.admissionBox {
+  margin-top: 150px;
+  width: 90%;
+}
+
+.admissionpara {
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  line-height: 1.8;
+}
+
+.admissionHeading {
+  margin: 40px 50px;
+  text-align: center;
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 400;
+}

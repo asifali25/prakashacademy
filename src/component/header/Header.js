@@ -6,6 +6,7 @@ import styles from "./Header.module.css";
 import Logo from "../../../public/Logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
+import Link from "next/link";
 
 function Header({ setMob, mobNav }) {
   function openClickHandler() {
@@ -27,10 +28,28 @@ function Header({ setMob, mobNav }) {
           </div>
           <nav className={styles.nav}>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Admission Guide</li>
-              <li>Contact Us</li>
+              <li>
+                <Link className={styles.deskLink} href="/">
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link className={styles.deskLink} href="/aboutus">
+                  About Us
+                </Link>
+              </li>
+
+              <li>
+                <Link className={styles.deskLink} href="/admissionguide">
+                  Admission Guide
+                </Link>
+              </li>
+              <li>
+                <Link className={styles.deskLink} href="/contact">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </nav>
           <div className={styles.querybtnBox}>

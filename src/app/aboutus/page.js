@@ -1,7 +1,9 @@
+import AboutusPage from "@/component/aboutus_page/AboutusPage";
+
 function AboutUs() {
   return (
     <>
-      <h1>About Us</h1>
+      <AboutusPage></AboutusPage>
     </>
   );
 }

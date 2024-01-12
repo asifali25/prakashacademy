@@ -10,6 +10,11 @@
   z-index: 1;
 }
 
+.deskLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 .headerbox {
   display: flex;
   justify-content: space-between;

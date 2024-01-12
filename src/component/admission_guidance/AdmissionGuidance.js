@@ -6,6 +6,7 @@ import SatyamLaw from "../../../public/satyamlaw.png";
 import SatyamIti from "../../../public/satyamiti.png";
 import Tide from "../../../public/tide.svg";
 import Dotgroup from "../../../public/dotgroup.svg";
+import Link from "next/link";
 
 function AdmissionGuidance() {
   return (
@@ -66,7 +67,9 @@ function AdmissionGuidance() {
                 BSW | GIS | MLTs | DDT | DDA | DEHM | PG DAA | B.P.Ed | DCS |
                 CECG | DMLT | DX-Ray | DA | DRIT| Ph.D | etc.{" "}
               </p>
-              <button className={styles.coursbtn}>Learn More &#10230;</button>
+              <Link href="/biruniversity">
+                <button className={styles.coursbtn}>Learn More &#10230;</button>
+              </Link>
             </div>
             <div className={styles.secondcontainer}>
               <div className={styles.satyamcontainer}>
@@ -92,9 +95,11 @@ function AdmissionGuidance() {
                   </div>
                   <p className={styles.satyamcourse}>COURSE OFFERED</p>
                   <p className={styles.satyampara}>LLB 5/3 Years</p>
-                  <button className={styles.satyamsbtn}>
-                    Learn More &#10230;
-                  </button>
+                  <Link href="/satyamlaw">
+                    <button className={styles.satyamsbtn}>
+                      Learn More &#10230;
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div className={styles.satyamcontainerTwo}>
@@ -120,9 +125,11 @@ function AdmissionGuidance() {
                   </div>
                   <p className={styles.satyamiticourse}>COURSE OFFERED</p>
                   <p className={styles.satyamitiparatwo}>LLB 5/3 Years</p>
-                  <button className={styles.satyamsbtn}>
-                    Learn More &#10230;
-                  </button>
+                  <Link href="/satyami">
+                    <button className={styles.satyamsbtn}>
+                      Learn More &#10230;
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

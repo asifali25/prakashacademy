@@ -5,6 +5,7 @@ import SchoolTeacher from "../../../public/schoolteacher.png";
 import Graduation from "../../../public/graduation.png";
 import Professional from "../../../public/professional.png";
 import DotGroup from "../../../public/dotgroup.svg";
+import Link from "next/link";
 
 function Coaching() {
   return (
@@ -83,7 +84,11 @@ function Coaching() {
               </div>
             </div>
             <div className={styles.coachingBtnBox}>
-              <button className={styles.coachingBtn}>Know More &#10230;</button>
+              <Link className={styles.coachingLink} href="/contact">
+                <button className={styles.coachingBtn}>
+                  Know More &#10230;
+                </button>
+              </Link>
             </div>
           </div>
           <div className={styles.coachingBoxTwo}>
@@ -143,7 +148,11 @@ function Coaching() {
               </div>
             </div>
             <div className={styles.coachingBtnBox}>
-              <button className={styles.coachingBtn}>Know More &#10230;</button>
+              <Link className={styles.coachingLink} href="/contact">
+                <button className={styles.coachingBtn}>
+                  Know More &#10230;
+                </button>
+              </Link>
             </div>
           </div>
           <div className={styles.coachingBoxThree}>
@@ -174,7 +183,11 @@ function Coaching() {
               </div>
             </div>
             <div className={styles.coachingBtnBox}>
-              <button className={styles.coachingBtn}>Know More &#10230;</button>
+              <Link className={styles.coachingLink} href="/contact">
+                <button className={styles.coachingBtn}>
+                  Know More &#10230;
+                </button>
+              </Link>
             </div>
           </div>
         </div>

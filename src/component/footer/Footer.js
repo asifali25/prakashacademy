@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Footer.module.css";
 import facebook from "../../../public/social/facebook.svg";
 import insta from "../../../public/social/insta.svg";
@@ -61,10 +62,27 @@ function Footer() {
           </div>
           <div className={styles.footerLinkPagesContainer}>
             <div className={styles.footerHome}>
-              <p>Home</p>
-              <p>About Us</p>
-              <p>Carrier Guide</p>
-              <p>Contact us</p>
+              <p>
+                <Link href="/" className={styles.footerLink}>
+                  Home
+                </Link>
+              </p>
+              <p>
+                <Link href="/aboutus" className={styles.footerLink}>
+                  About Us
+                </Link>
+              </p>
+              <p>
+                <Link href="/admissionguide" className={styles.footerLink}>
+                  Admission Guide
+                </Link>
+              </p>
+              <p>
+                {" "}
+                <Link href="/contact" className={styles.footerLink}>
+                  Contact us
+                </Link>
+              </p>
             </div>
           </div>
           <div className={styles.footerContact}>

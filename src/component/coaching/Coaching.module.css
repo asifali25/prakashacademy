@@ -111,6 +111,11 @@
   position: absolute;
 }
 
+.coachingLink {
+  text-decoration: none;
+  color: var(--txtBlack);
+}
+
 @media screen and (max-width: 1024px) {
   .coachingBoxContainer {
     width: 90%;

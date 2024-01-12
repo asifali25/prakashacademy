@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./MobileNav.module.css";
 import { RxCross1 } from "react-icons/rx";
+import Link from "next/link";
 
 function MobileNav({ setMob, mobNav }) {
   function closeClickHandler() {
@@ -20,10 +21,18 @@ function MobileNav({ setMob, mobNav }) {
           <RxCross1 className={styles.mobClose}></RxCross1>
         </div>
         <div className={styles.mobNav}>
-          <p>Home</p>
-          <p>About Us</p>
-          <p>Admission Guide</p>
-          <p>Contact Us</p>
+          <Link className={styles.mobNavLink} href="/">
+            <p>Home</p>
+          </Link>
+          <Link className={styles.mobNavLink} href="/aboutus">
+            <p>About Us</p>
+          </Link>
+          <Link className={styles.mobNavLink} href="/admissionguide">
+            <p>Admission Guide</p>
+          </Link>
+          <Link className={styles.mobNavLink} href="/contact">
+            <p>Contact Us</p>
+          </Link>
         </div>
         <div className={styles.mobNavBtnBox}>
           <button className={styles.mobNavBtn}>Query Now</button>

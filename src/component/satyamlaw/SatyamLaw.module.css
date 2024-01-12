@@ -1,0 +1,46 @@
+.satyamMainContainer {
+  width: 100vw;
+  position: relative;
+}
+
+.satyamInnerContainer {
+  width: 90%;
+  margin: 200px auto 100px auto;
+}
+
+.satyamHeadBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.satyamImgBox {
+  width: 200px;
+  height: 150px;
+}
+
+.satyamImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.satyamHeadTxtHeading {
+  font-size: clamp(3rem, 4vw, 4rem);
+  color: var(--blue-color);
+}
+
+.satyamHeadTxtPara {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin: 0;
+  line-height: 1.5;
+  color: var(--blue-color-v1);
+}
+
+.satyamPara {
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  line-height: 1.5;
+  letter-spacing: 1px;
+}

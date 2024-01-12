@@ -10,6 +10,7 @@ import Polygon from "../../../public/Polygon.svg";
 import Ellipse from "../../../public/Ellipse.svg";
 import Star from "../../../public/Star.svg";
 import hlafEllipse from "../../../public/half_Ellipse.svg";
+import Link from "next/link";
 
 function SectionOne() {
   return (
@@ -40,7 +41,9 @@ function SectionOne() {
             </p>
             <div className={styles.coachinglinkbox}>
               <div className={styles.coachinglinkCircle}></div>
-              <p className={styles.coachinglink}>Start your Journey &rarr;</p>
+              <Link className={styles.coachingLink} href="/contact">
+                <p className={styles.coachinglink}>Start your Journey &rarr;</p>
+              </Link>
             </div>
           </div>
         </div>

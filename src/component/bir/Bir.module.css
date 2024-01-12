@@ -1,0 +1,88 @@
+.birMainContainer {
+  width: 100vw;
+  position: relative;
+}
+
+.birInsideContainer {
+  width: 90%;
+  margin: 200px auto 100px auto;
+}
+
+.birheadbox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.imgbox {
+  width: 200px;
+  height: 150px;
+}
+
+.birImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.birtxtHeading {
+  font-size: clamp(3rem, 4vw, 4rem);
+  color: var(--blue-color);
+}
+
+.birtxtPara {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin: 0;
+  line-height: 1.5;
+  color: var(--blue-color-v1);
+}
+
+.ApprovedHeading {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 35px;
+}
+
+.birApproved {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.birApprovedBox {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.5px solid var(--txtBlack);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.birApprovtxtPara {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  font-weight: bold;
+  color: var(--blue-color-v1);
+}
+
+.birAboutTxt {
+  margin-bottom: 50px;
+}
+
+.birAboutTxt > p {
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.birBtn {
+  padding: 10px 20px;
+  background-color: var(--orange);
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import styles from "./Faq.module.css";
 
 function FAQ() {
@@ -33,7 +34,9 @@ function FAQ() {
               Any Additional Question?<br></br> We are here to help
             </p>
             <div className={styles.faqBtnBox}>
-              <button>Additional FAQ</button>
+              <Link href="/contact" className={styles.faqLink}>
+                <button>Additional FAQ</button>
+              </Link>
             </div>
           </div>
           <div className={styles.faqQuestionTwoBox}>

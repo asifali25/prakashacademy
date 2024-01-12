@@ -295,6 +295,11 @@
   z-index: 0;
 }
 
+.coachingLink {
+  text-decoration: none;
+  color: var(--txtBlack);
+}
+
 @media screen and (max-width: 1577px) {
   .SectionOneBox {
     width: min(50%, 550px);

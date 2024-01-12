@@ -3,6 +3,11 @@
   background-color: var(--blue-color-v1);
 }
 
+.footerLink {
+  text-decoration: none;
+  color: white;
+}
+
 .footerContainerInside {
   width: 90%;
   margin: 0 auto;

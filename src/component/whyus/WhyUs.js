@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./WhyUs.module.css";
 import dotGroup from "../../../public/dotgroup.svg";
 import Expertise from "../../../public/whyus/star.svg";
@@ -151,7 +152,9 @@ function WhyUs() {
             </div>
           </div>
           <div className={styles.whyUsBtnBox}>
-            <button className={styles.whyUsBtn}>Know More &#10230;</button>
+            <Link className={styles.whyUsLink} href="/aboutus">
+              <button className={styles.whyUsBtn}>Know More &#10230;</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -98,11 +98,16 @@
   justify-content: center;
 }
 
-.faqBtnBox > button {
+.faqBtnBox button {
   background-color: var(--orange);
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
+}
+
+.faqLink {
+  text-decoration: none;
+  color: var(--txtBlack);
 }
 
 @media screen and (max-width: 1024px) {
