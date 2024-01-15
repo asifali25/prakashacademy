@@ -1,9 +1,28 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useForm, ValidationError } from "@formspree/react";
 import styles from "./Query.module.css";
 import Question from "../../../public/qury/quation.svg";
 
 function Query() {
+  const [state, handleSubmit] = useForm("myyrzpaq");
+  if (state.succeeded) {
+    return (
+      <div className={styles.queryThanks}>
+        <p
+          style={{
+            fontSize: "2rem",
+            textAlign: "center",
+            fontWeight: "bold",
+          }}
+        >
+          Thanks for Query <br></br> We Will get back to you shortly
+        </p>
+      </div>
+    );
+  }
   return (
     <div className={styles.queryContainer}>
       <div className={styles.queryHeaderbox}>
@@ -27,16 +46,50 @@ function Query() {
             ></Image>
           </div>
           <div className={styles.queryFormDiv}>
-            <form className={styles.queryForm}>
-              <input type="text" placeholder="Full Name"></input>
-              <input type="text" placeholder="Phone Number"></input>
-              <input type="email" placeholder="Email Address"></input>
+            <form className={styles.queryForm} onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required
+              ></input>
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              ></input>
+              <ValidationError
+                prefix="Phone"
+                field="phone"
+                errors={state.errors}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              ></input>
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
               <textarea
                 className={styles.queryTxtArea}
                 placeholder="Type your Query"
                 resize="none"
+                name="message"
+                required
               ></textarea>
-              <button className={styles.queryBtn}>Send</button>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+              <button type="submit" className={styles.queryBtn}>
+                Send
+              </button>
             </form>
           </div>
         </div>

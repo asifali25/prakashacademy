@@ -82,6 +82,16 @@
   border: none;
 }
 
+.queryThanks {
+  width: 90%;
+  background-color: var(--blue-light-v4);
+  margin: 0 auto;
+}
+
+.queryThanks > p {
+  padding: 50px;
+}
+
 @media screen and (max-width: 1041px) {
   .queryFormBox {
     display: flex;

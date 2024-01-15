@@ -53,7 +53,9 @@ function Header({ setMob, mobNav }) {
             </ul>
           </nav>
           <div className={styles.querybtnBox}>
-            <button className={styles.querybtn}>Query Now</button>
+            <Link href="/contact">
+              <button className={styles.querybtn}>Query Now</button>
+            </Link>
           </div>
           <div className={styles.mobHamberger} onClick={openClickHandler}>
             <RxHamburgerMenu

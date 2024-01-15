@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./AboutusPage.module.css";
+import Head from "next/head";
 
 function AboutusPage() {
   return (

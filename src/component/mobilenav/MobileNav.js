@@ -35,7 +35,9 @@ function MobileNav({ setMob, mobNav }) {
           </Link>
         </div>
         <div className={styles.mobNavBtnBox}>
-          <button className={styles.mobNavBtn}>Query Now</button>
+          <Link href="/contact">
+            <button className={styles.mobNavBtn}>Query Now</button>
+          </Link>
         </div>
       </nav>
     </>
