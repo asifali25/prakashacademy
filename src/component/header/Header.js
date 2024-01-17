@@ -46,6 +46,11 @@ function Header({ setMob, mobNav }) {
                 </Link>
               </li>
               <li>
+                <Link className={styles.deskLink} href="/gallary">
+                  Gallary
+                </Link>
+              </li>
+              <li>
                 <Link className={styles.deskLink} href="/contact">
                   Contact Us
                 </Link>
