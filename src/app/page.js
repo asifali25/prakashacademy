@@ -20,6 +20,7 @@ export const metadata = {
     "Admission Guide",
     "Admission Guidance",
     "Carrier Guide",
+    "Laxmi Nagar",
   ],
   authors: [{ name: "Mahendra Kumar" }],
   openGraph: {
