@@ -78,7 +78,11 @@ function Footer() {
                 </Link>
               </p>
               <p>
-                {" "}
+                <Link href="/gallary" className={styles.footerLink}>
+                  Gallery
+                </Link>
+              </p>
+              <p>
                 <Link href="/contact" className={styles.footerLink}>
                   Contact us
                 </Link>

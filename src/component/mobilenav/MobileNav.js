@@ -30,6 +30,9 @@ function MobileNav({ setMob, mobNav }) {
           <Link className={styles.mobNavLink} href="/admissionguide">
             <p>Admission Guide</p>
           </Link>
+          <Link className={styles.mobNavLink} href="/gallary">
+            <p>Gallery</p>
+          </Link>
           <Link className={styles.mobNavLink} href="/contact">
             <p>Contact Us</p>
           </Link>
