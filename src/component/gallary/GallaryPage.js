@@ -17,6 +17,19 @@ const ImageData = [
   { id: "8", src: "/gallery9.jpg", name: "Prakash_Academy9" },
   { id: "9", src: "/gallery10.jpg", name: "Prakash_Academy10" },
   { id: "10", src: "/gallery11.jpg", name: "Prakash_Academy11" },
+  { id: "11", src: "/gallery12.jpeg", name: "Prakash_Academy12" },
+  { id: "12", src: "/gallery13.jpeg", name: "Prakash_Academy13" },
+  { id: "13", src: "/gallery14.jpeg", name: "Prakash_Academy14" },
+  { id: "14", src: "/gallery15.jpeg", name: "Prakash_Academy15" },
+  { id: "15", src: "/gallery16.jpeg", name: "Prakash_Academy16" },
+  { id: "16", src: "/gallery17.jpeg", name: "Prakash_Academy17" },
+  { id: "17", src: "/gallery18.jpeg", name: "Prakash_Academy18" },
+  { id: "18", src: "/gallery19.jpeg", name: "Prakash_Academy19" },
+  { id: "19", src: "/gallery20.jpeg", name: "Prakash_Academy20" },
+  { id: "20", src: "/gallery21.jpeg", name: "Prakash_Academy21" },
+  { id: "21", src: "/gallery22.jpeg", name: "Prakash_Academy22" },
+  { id: "22", src: "/gallery23.jpeg", name: "Prakash_Academy23" },
+  { id: "23", src: "/gallery24.jpeg", name: "Prakash_Academy24" },
 ];
 
 function GallaryPage() {
