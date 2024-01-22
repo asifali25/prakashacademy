@@ -1,4 +1,10 @@
 User-agent: *
-Allow: /
+Allow: /aboutus
+Allow: /admissionguide
+Allow: /biruniversity
+Allow: /contact
+Allow: /gallary
+Allow: /satyami
+Allow: /satyamlaw
 
 Sitemap: https://prakashacademy.net/sitemap.xml
