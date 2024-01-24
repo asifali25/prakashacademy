@@ -30,6 +30,7 @@ const ImageData = [
   { id: "21", src: "/gallery22.jpeg", name: "Prakash_Academy22" },
   { id: "22", src: "/gallery23.jpeg", name: "Prakash_Academy23" },
   { id: "23", src: "/gallery24.jpeg", name: "Prakash_Academy24" },
+  { id: "24", src: "/gallery25.jpeg", name: "Prakash_Academy25" },
 ];
 
 function GallaryPage() {
