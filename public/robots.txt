@@ -1,4 +1,5 @@
 User-agent: *
+Allow: /
 Allow: /aboutus
 Allow: /admissionguide
 Allow: /biruniversity
