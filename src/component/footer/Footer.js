@@ -131,6 +131,11 @@ function Footer() {
               </p>
             </div>
           </div>
+          <div className={styles.footerCopyrightBox}>
+            <p className={styles.footerCopyrightTxt}>
+              Copyright@2024 All Rights Reserved by Prakash Academy
+            </p>
+          </div>
         </div>
       </div>
     </>

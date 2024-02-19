@@ -10,6 +10,7 @@ import { useState } from "react";
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -22,8 +23,8 @@ export default function RootLayout({ children }) {
   const [mobNav, SetMobNav] = useState(false);
 
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={inter.className}>
+      <body>
         <Header setMob={SetMobNav} mobNav={mobNav}></Header>
         <MobileNav setMob={SetMobNav} mobNav={mobNav}></MobileNav>
         {children}
