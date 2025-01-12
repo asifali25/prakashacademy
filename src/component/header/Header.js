@@ -18,13 +18,15 @@ function Header({ setMob, mobNav }) {
       <header className={styles.header}>
         <div className={styles.headerbox}>
           <div className={styles.logobox}>
-            <Image
-              className={styles.logoImg}
-              src={Logo}
-              width={100}
-              height={100}
-              alt="Prakash_Academy_Logo"
-            ></Image>
+            <Link href="/">
+              <Image
+                className={styles.logoImg}
+                src={Logo}
+                width={100}
+                height={100}
+                alt="Prakash_Academy_Logo"
+              ></Image>
+            </Link>
           </div>
           <nav className={styles.nav}>
             <ul>

@@ -30,14 +30,16 @@
 }
 
 .birbox {
-  width: min(100%, 800px);
+  /* width: min(100%, 800px); */
+  width: 500px;
+  flex-basis: auto;
   border-radius: 20px;
   background-color: var(--blue-color);
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);
 }
 
 .birfirst {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   display: flex;
   gap: 20px;
 }
@@ -64,7 +66,7 @@
   padding: 0;
   color: white;
   padding-left: 20px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-weight: 600;
   position: relative;
 }
@@ -80,12 +82,14 @@
 }
 
 .bripara {
+  /* height: 25px; */
   font-size: 1.1rem;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
   line-height: 2;
   letter-spacing: 1px;
+  overflow-y: hidden;
 }
 
 .coursbtn {
@@ -118,11 +122,11 @@
 }
 
 .satyamcontainer {
-  width: 100%;
+  width: 500px;
+  flex-basis: auto;
   /* width: min(100%, 500px); */
   background-color: var(--blue-light-v2);
   border-radius: 20px;
-  margin-bottom: 50px;
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -174,7 +178,9 @@
 }
 
 .satyamcontainerTwo {
-  width: 100%;
+  /* width: 100%; */
+  width: 500px;
+  flex-basis: auto;
   background-color: var(--blue-light-v4);
   border-radius: 20px;
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);
@@ -305,6 +311,8 @@
 
   .satyamcontainerTwo {
     width: min(100%, 700px);
+    /* width: 300px;
+    flex-basis: auto; */
     background-color: var(--blue-light-v4);
     border-radius: 20px;
     box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.25);

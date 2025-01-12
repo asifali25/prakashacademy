@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { use, useState } from "react";
 import Image from "next/image";
 import styles from "./AdmissionGuidance.module.css";
 import BirImg from "../../../public/birimg.png";
@@ -9,6 +11,13 @@ import Dotgroup from "../../../public/dotgroup.svg";
 import Link from "next/link";
 
 function AdmissionGuidance() {
+  const [more, setMore] = useState(false);
+  // const [btnText, setBtnText] = useState("more");
+
+  function moreClickHandle() {
+    setMore((s) => !s);
+  }
+
   return (
     <>
       <div className={styles.admissionMainContainer}>
@@ -61,76 +70,96 @@ function AdmissionGuidance() {
               </div>
               <p className={styles.bircourse}>COURSE OFFERED</p>
               <p className={styles.bripara}>
-                Pre University Secondary/ Sr. Secondary | B.A | BSc | B.Com |
-                BBA | BJMC | BBM | M.A | M.Sc | M.Com | MBA | B.Tech | D Pharma
-                | B Pharma | Special B.Ed | LLB 5/3 Years | M.Tech | LLM | MCA |
-                BSW | GIS | MLTs | DDT | DDA | DEHM | PG DAA | B.P.Ed | DCS |
-                CECG | DMLT | DX-Ray | DA | DRIT| Ph.D | etc.{" "}
+                {more ? (
+                  <>
+                    Pre University Secondary/ Sr. Secondary | B.A | BSc | B.Com
+                    | BBA | BJMC | BBM | M.A | M.Sc | M.Com | MBA | B.Tech | D
+                    Pharma | B Pharma | Special B.Ed | LLB 5/3 Years | M.Tech |
+                    LLM | MCA | BSW | GIS | MLTs | DDT | DDA | DEHM | PG DAA |
+                    B.P.Ed | DCS | CECG | DMLT | DX-Ray | DA | DRIT| Ph.D | etc.{" "}
+                    {
+                      <span
+                        style={{ color: "#fab452", cursor: "pointer" }}
+                        onClick={moreClickHandle}
+                      >
+                        Less
+                      </span>
+                    }
+                  </>
+                ) : (
+                  <>
+                    Pre University Secondary/ Sr. Secondary{" "}
+                    {
+                      <span
+                        onClick={moreClickHandle}
+                        style={{ color: "#fab452", cursor: "pointer" }}
+                      >
+                        More...
+                      </span>
+                    }{" "}
+                  </>
+                )}
               </p>
               <Link href="/biruniversity">
                 <button className={styles.coursbtn}>Learn More &#10230;</button>
               </Link>
             </div>
-            <div className={styles.secondcontainer}>
-              <div className={styles.satyamcontainer}>
-                <div className={styles.satyambox}>
-                  <div className={styles.satyamhead}>
-                    <div className={styles.satyamimgbox}>
-                      <Image
-                        className={styles.satyamimg}
-                        src={SatyamLaw}
-                        width={200}
-                        height={200}
-                        alt="Sayam_Law_College"
-                      ></Image>
-                    </div>
-                    <div className={styles.satyamheadtxt}>
-                      <h1 className={styles.sathead}>
-                        SATYAM LAW <br></br> COLLEGE
-                      </h1>
-                      <p className={styles.satpara}>
-                        (Recognized CCS University)
-                      </p>
-                    </div>
+            <div className={styles.satyamcontainer}>
+              <div className={styles.satyambox}>
+                <div className={styles.satyamhead}>
+                  <div className={styles.satyamimgbox}>
+                    <Image
+                      className={styles.satyamimg}
+                      src={SatyamLaw}
+                      width={200}
+                      height={200}
+                      alt="Sayam_Law_College"
+                    ></Image>
                   </div>
-                  <p className={styles.satyamcourse}>COURSE OFFERED</p>
-                  <p className={styles.satyampara}>LLB 5/3 Years</p>
-                  <Link href="/satyamlaw">
-                    <button className={styles.satyamsbtn}>
-                      Learn More &#10230;
-                    </button>
-                  </Link>
+                  <div className={styles.satyamheadtxt}>
+                    <h1 className={styles.sathead}>
+                      SATYAM LAW <br></br> COLLEGE
+                    </h1>
+                    <p className={styles.satpara}>
+                      (Recognized CCS University)
+                    </p>
+                  </div>
                 </div>
+                <p className={styles.satyamcourse}>COURSE OFFERED</p>
+                <p className={styles.satyampara}>LLB 5/3 Years</p>
+                <Link href="/satyamlaw">
+                  <button className={styles.satyamsbtn}>
+                    Learn More &#10230;
+                  </button>
+                </Link>
               </div>
-              <div className={styles.satyamcontainerTwo}>
-                <div className={styles.satyaitimbox}>
-                  <div className={styles.satyitiamhead}>
-                    <div className={styles.satyamimgbox}>
-                      <Image
-                        className={styles.satyamimg}
-                        src={SatyamIti}
-                        width={200}
-                        height={200}
-                        alt="Sayam_Law_College"
-                      ></Image>
-                    </div>
-                    <div className={styles.satyamheadtxt}>
-                      <h1 className={styles.satitihead}>
-                        SATYAM <br></br> ITI
-                      </h1>
-                      <p className={styles.satitipara}>
-                        (Fully Govt Recognized)
-                      </p>
-                    </div>
+            </div>
+            <div className={styles.satyamcontainerTwo}>
+              <div className={styles.satyaitimbox}>
+                <div className={styles.satyitiamhead}>
+                  <div className={styles.satyamimgbox}>
+                    <Image
+                      className={styles.satyamimg}
+                      src={SatyamIti}
+                      width={200}
+                      height={200}
+                      alt="Sayam_Law_College"
+                    ></Image>
                   </div>
-                  <p className={styles.satyamiticourse}>COURSE OFFERED</p>
-                  <p className={styles.satyamitiparatwo}>LLB 5/3 Years</p>
-                  <Link href="/satyami">
-                    <button className={styles.satyamsbtn}>
-                      Learn More &#10230;
-                    </button>
-                  </Link>
+                  <div className={styles.satyamheadtxt}>
+                    <h1 className={styles.satitihead}>
+                      SATYAM <br></br> ITI
+                    </h1>
+                    <p className={styles.satitipara}>(Fully Govt Recognized)</p>
+                  </div>
                 </div>
+                <p className={styles.satyamiticourse}>COURSE OFFERED</p>
+                <p className={styles.satyamitiparatwo}>LLB 5/3 Years</p>
+                <Link href="/satyami">
+                  <button className={styles.satyamsbtn}>
+                    Learn More &#10230;
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
