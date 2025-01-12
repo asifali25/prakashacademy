@@ -17,13 +17,6 @@
   color: var(--blue-color);
 }
 
-.fullImage {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
 .secondContainer {
   width: 90%;
   margin: 200px auto;
@@ -35,9 +28,43 @@
   flex-wrap: wrap;
 }
 
-.closeImg {
-  font-size: clamp(1.2rem, 3vw, 4rem);
-  font-weight: bold;
-  color: red;
-  cursor: pointer;
+.closingBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(63, 63, 63, 0.486);
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdropClose {
+  display: none;
+}
+
+.openImagePage {
+  width: 80%;
+  height: 80%;
+}
+
+.fullImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .openImagePage {
+    width: 90%;
+    height: 50%;
+  }
 }

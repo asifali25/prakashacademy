@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./GallaryPage.module.css";
 import GalleryBox from "../gallerybox/GalleryBox";
+import { IoIosCloseCircle } from "react-icons/io";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const ImageData = [
   { id: "0", src: "/gallery1.jpg", name: "Prakash_Academy1" },
@@ -49,7 +51,45 @@ function GallaryPage() {
   return (
     <>
       <div className={styles.mainContainer}>
-        {openModel && (
+        <div
+          onClick={closeHandler}
+          className={
+            openModel ? `${styles.backdrop}` : `${styles.backdropClose}`
+          }
+        >
+          <div className={styles.openImagePage}>
+            <div className={styles.closingBox}>
+              <IoMdCloseCircleOutline
+                onClick={closeHandler}
+                style={{ color: "red", fontSize: "30px" }}
+              ></IoMdCloseCircleOutline>
+            </div>
+            <Image
+              className={styles.fullImage}
+              src={ImageData[slideNo].src}
+              width={500}
+              height={500}
+              alt={ImageData[slideNo].name}
+            ></Image>
+          </div>
+        </div>
+
+        <div className={styles.secondContainer}>
+          <h1 className={styles.secondContainerHeading}>Gallary</h1>
+          <div className={styles.secondContainerImgBox}>
+            {ImageData.map((data, index) => (
+              <GalleryBox
+                key={index}
+                id={index}
+                src={data.src}
+                name={data.name}
+                onclick={photoClickHandler}
+              ></GalleryBox>
+            ))}
+          </div>
+        </div>
+
+        {/* {openModel && (
           <div className={styles.fullImgContainer}>
             <div className={styles.closeImg} onClick={closeHandler}>
               X
@@ -62,24 +102,7 @@ function GallaryPage() {
               alt={ImageData[slideNo].name}
             ></Image>
           </div>
-        )}
-
-        {!openModel && (
-          <div className={styles.secondContainer}>
-            <h1 className={styles.secondContainerHeading}>Gallary</h1>
-            <div className={styles.secondContainerImgBox}>
-              {ImageData.map((data, index) => (
-                <GalleryBox
-                  key={index}
-                  id={index}
-                  src={data.src}
-                  name={data.name}
-                  onclick={photoClickHandler}
-                ></GalleryBox>
-              ))}
-            </div>
-          </div>
-        )}
+        )} */}
       </div>
     </>
   );
