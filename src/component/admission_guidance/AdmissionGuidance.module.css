@@ -162,6 +162,7 @@
 
 .satyampara {
   font-size: 1.1rem;
+  line-height: 2;
   color: white;
 }
 
@@ -202,6 +203,7 @@
 
 .satitipara {
   font-size: 1.1rem;
+  line-height: 2;
   color: var(--txtBlack);
 }
 
